@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/华为.svg" type="image/x-icon">
+    <title>Mate50</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .header{
+            display: flex;
+            height: 50px;
+            justify-content: space-evenly;
+        }
+        .header .logo{
+            width: 100px;
+            padding-top: 13px;
+        }
+        .header .left{
+            width: 800px;
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 50px;
+        }
+        .header .left li:hover{
+            border-bottom: 3px solid #000;
+        }
+        .header .left li a{
+            color: #000;
+            font-weight: bold;
+        }
+        .header .right{
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 50px;
+        }
+        .header .right a{
+            color:#000
+        }
+        .header .btn{
+            height: 50px;
+            width: 30px;
+            background: rgba(0, 0, 0, 0);
+            border: 0px solid #000;
+            line-height: 50px;
+            padding-top: 7px;
+        }
+        .header .btn img{
+            height: 25px;
+            width: 25px;
+        }
+        .header .log{
+            height: 30px;
+            width: 30px;
+            background: rgba(0, 0, 0, 0);
+            border: 0px solid #000;
+            padding-top: 10px;
+        }
+        .header .log img{
+            height: 25px;
+            width: 25px;
+        }
+        .header .store{
+            width: 100px;
+            height: 30px;
+            border: 1px solid #000;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 8px;
+        }
+        .header .store a{
+            color: #000;
+        }
+        .container{
+            display: flex;
+            width: 1200px;
+            height: 600px;
+            background-color: rgb(240, 26, 26);
+            margin: 0 auto;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        .container ul{
+            display: flex;
+        }
+        .container img{
+            width: 1200px;
+            height: 600px;
+            animation: move 20s 2s infinite forwards;
+        }
+        @keyframes move{
+            0%{
+                transform: translate(0);
+            }
+            20%{
+                transform: translateX(-1200px);
+            }
+            25%{
+                transform: translateX(-1200px);
+            }
+            45%{
+                transform: translateX(-2400px);
+            }
+            50%{
+                transform: translateX(-2400px);
+            }
+            70%{
+                transform: translateX(-3600px);
+            }
+            75%{
+                transform: translate(-3600px);
+            }
+            95%{
+                transform: translateX(-4800px);
+            }
+            100%{
+                transform: translateX(-4800px);
+            }
+        }
+        .produce{
+            padding-top: 50px;
+            width: 1200px;
+            height: 900px;
+            display: flex;
+            margin: 0 auto;
+        }
+        .produce img{
+            width: 400px;
+            height: 250px;
+            transition: all 0.6s;
+        }
+        .produce img:hover{
+            width: 450px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+        .produce ul li{
+            width: 1200px;
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        .os{
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        .os .card1 ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .os .card1 li{
+            width: 250px;
+            height: 200px;
+            background-color: rgb(35, 25, 25);
+            border-radius: 20px;
+            transition: all 1s;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .os .card1 li:hover{
+            transform: scale(120%);
+        }
+        .os .card1 img{
+            width: 200px;
+            height: 100px;
+            margin-left: 26px;
+            margin-top: 30px;
+            margin-bottom: 14px;
+        }
+        .os h1{
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .os .card1 ul li h3{
+            text-align: center;
+            color: aliceblue;
+        }
+        .os .card2{
+            /* float: left; */
+            margin-top: 50px;
+        }
+        .os .card2 ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .os .card2 img{
+            height: 300px;
+            width: 130px;
+            margin-left: 90px;
+
+        }
+        .os .card2 li{
+            /* border: 1px solid #000; */
+            height: 450px;
+            width: 300px;
+            /* border-radius: 30px; */
+            transition: all 1s;
+            border-radius: 30px;
+        }
+        .os .card2 li:hover{
+            background-color: rgb(7, 7, 7);
+        }
+        .os .card2 li:hover h3{
+            color: aliceblue;
+        }
+        .os .card2 li:hover span{
+            color: aliceblue;
+        }
+        .os .card2 h3{
+            text-align: center;
+            margin-top: 10px;
+            transition: all 1.5s;
+        }
+        .os .card2 span{
+            text-align: center;
+            padding: 17px 0;
+            display: block;
+            transition: all 1.5s;
+        }
+        .footer{
+            margin-top: 100px;
+            height: 380px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer ul li{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .footer ul li:hover a{
+            color: rgba(33, 11, 236, 0.81);
+        }
+        .footer ul li a{
+            color: #333;
+            font-size: 14px;
+        }
+        .footer ul h3{
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="https://consumer.huawei.com/cn/"><img src="./media/logo.svg" alt=""></a>
+        </div>
+        <ul class="left">
+            <li><a href="https://consumer.huawei.com/cn/phones/">手机</a></li>
+            <li><a href="https://consumer.huawei.com/cn/laptops/">电脑</a></li>
+            <li><a href="https://consumer.huawei.com/cn/tablets/">平板</a></li>
+            <li><a href="https://consumer.huawei.com/cn/visions/">智慧屏</a></li>
+            <li><a href="https://consumer.huawei.com/cn/wearables/">穿戴</a></li>
+            <li><a href="https://consumer.huawei.com/cn/headphones/">耳机音箱</a></li>
+            <li><a href="https://consumer.huawei.com/cn/wholehome/">全屋智能</a></li>
+            <li><a href="https://consumer.huawei.com/cn/routers/">更多产品</a></li>
+            <li><a href="https://consumer.huawei.com/cn/harmonyos-3/">HarmonyOS 3</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="https://consumer.huawei.com/cn/support/">服务支持</a></li>
+            <li><a href="https://consumer.huawei.com/cn/retail/">零售店</a></li>
+            <li><a href="https://consumer.huawei.com/cn/business/">商用</a></li>
+        </ul>
+        <button class="btn"><a href=""><img src="./media/搜索小.png" alt=""></a></button>
+        <button class="log"><a href=""><img src="./media/登录.png" alt=""></a></button>
+        <div class="store"><a href="https://www.vmall.com/portal/activity/index.html?pn=huaweizonePC&cid=27629229">华为商城</a></div>
+    </div>
+    <div class="container">
+        <ul>
+            <li><a href="https://consumer.huawei.com/cn/phones/mate50/"><img src="./media/1.jpg" alt=""></a></li>
+            <li><a href="https://consumer.huawei.com/cn/phones/mate50/"><img src="./media/2.jpg" alt=""></a></li>
+            <li><a href="https://consumer.huawei.com/cn/phones/mate50/"><img src="./media/3.jpg" alt=""></a></li>
+            <li><a href="https://consumer.huawei.com/cn/phones/mate50/"><img src="./media/4.png" alt=""></a></li>
+            <li><a href="https://consumer.huawei.com/cn/phones/mate50/"><img src="./media/1.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="produce">
+        <ul>
+            <li>
+                <a href=""><img src="./media/1.jpg" alt=""></a>
+                <span><h2>观感出众，屏屏出彩</h2>
+                <br>
+                    <b>6.7英寸</b>大屏，观感清晰通透，画质出众。<br>屏幕⁠经逐台校⁠色，支持全局色彩管理，呈现高水准色彩效果。<br>配合<b>1440Hz</b>PWM调光，有效减少频闪，观看更舒适⁠。
+                </span>
+            </li>
+            <li>
+                <span><h2>光影百变,洞见万千</h2>
+                    <br>
+                    首款搭载超光变<b>XMAGE</b>影像的华为手机，开启移动影像新体验。<br><b>5000w</b>像素超光变摄像头，根据场景智能选择光圈大小。<br>专业模式更有物理光圈十档可调，景深范围和虚化程度随心变化，故事主角与背景由你定⁠义。
+                </span>
+                <a href=""><img src="./media/2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./media/3.jpg" alt=""></a>
+                <span><h2>超长续航，超级快充</h2>
+                    <br>
+                    搭载<b>4460mAh</b>大电池、<b>66w</b>多通道华为有线超级快充和50W华为无线超级快充。<br>续航更持久,充电更快速。<br>1%低电量下启动应急模式，继续支持<b>12分钟</b>分钟紧⁠急⁠通⁠话，解你燃⁠眉⁠之⁠急。
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="os">
+        <h1>鸿蒙操作系统3.0</h1>
+        <div class="card1">
+            <ul>
+                <li>
+                    <a href=""><img src="./media/os1.jpg" alt=""></a>
+                    <h3>卡片组合，自由大小</h3>
+                </li>
+                <li>
+                    <a href=""><img src="./media/os2.jpg" alt=""></a>
+                    <h3>卡片堆叠，释放空间</h3>
+                </li>
+                <li>
+                    <a href=""><img src="./media/os3.jpg" alt=""></a>
+                    <h3>颜色布局，赏心悦目</h3>
+                </li>
+                <li>
+                    <a href=""><img src="./media/os4.jpg" alt=""></a>
+                    <h3>功能布局，效率更高</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="card2">
+            <ul>
+                <li>
+                    <h3>智能扫码，快人一步</h3>
+                    <span>对准二维码后双击电池后盖，可快速扫描支付码、场⁠所⁠码、单车码等，服务一步直达。</span>
+                    <a href=""><img src="./media/os5.jpg" alt=""></a>
+                </li>
+                <li>
+                    <h3>超级中转站，随心拖拽</h3>
+                    <span>将文字、图片、链接等内容长按拖入超级中转站后，你⁠可以跨应用、跨设备⁠，一次拖出多条内⁠容，批量分⁠享。</span>
+                    <a href=""><img src="./media/os6.jpg" alt=""></a>
+                </li>
+                <li>
+                    <h3>应用划一划，效率翻一番</h3>
+                    <span>上划桌面应用图标，即可展开服务卡片，内容随时⁠间智⁠能变化，贴心推送，超快使⁠用。</span>
+                    <a href=""><img src="./media/os7.jpg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><h3>服务支持</h3></li>
+                <li><a href="https://consumer.huawei.com/cn/support/warranty-policy/">保修政策</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/install/">上门服务</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/break-fix/">维修服务</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/warranty-query/">保修期及权益查询</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/sparepart-price/">维修备件价格</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/inquiry/">服务进度查询</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/contact-us/">联系我们</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/service-privacy-notice/">服务隐私声明</a></li>
+                <li><a href="https://bsupport.huawei.com/cn/">商用服务</a></li>
+            </ul>
+            <ul>
+                <li><h3>应用与下载</h3></li>
+                <li><a href="https://consumer.huawei.com/cn/mobileservices/">终端云服务</a></li>
+                <li><a href="https://www.vmall.com/portal/activity/index.html?pageId=401001427&cid=1457312">华为商城app</a></li>
+                <li><a href="https://consumer.huawei.com/cn/myhuawei-app/">我的华为app</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/hisuite/">华为手机助手</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/pc-manager/">华为电脑管家</a></li>
+                <li><a href="https://consumer.huawei.com/cn/harmonyos-3/">HarmonyOS 3</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/apk/">预置应用公示</a></li>
+            </ul>
+            <ul>
+                <li><h3>新闻中心</h3></li>
+                <li><a href="https://consumer.huawei.com/cn/press/news/">华为新闻</a></li>
+                <li><a href="https://consumer.huawei.com/cn/press/events/">华为活动</a></li>
+            </ul>
+            <ul>
+                <li><h3>关于我们</h3></li>
+                <li><a href="https://consumer.huawei.com/cn/about-us/">关于我们</a></li>
+                <li><a href="https://consumer.huawei.com/cn/sustainability/">可持续发展</a></li>
+                <li><a href="https://consumer.huawei.com/cn/privacy/">隐私</a></li>
+                <li><a href="https://sale.vmall.com/huaweizone.html#cid=91712">华为商城</a></li>
+                <li><a href="https://www.huaweicloud.com/">华为云</a></li>
+                <li><a href="https://e.huawei.com/cn/">企业业务</a></li>
+                <li><a href="https://carrier.huawei.com/cn/">运营商网络</a></li>
+                <li><a href="https://www.huawei.com/cn/">华为集团</a></li>
+                <li><a href="https://career.huawei.com/reccampportal/portal5/index.html">加入华为</a></li>
+                <li><a href="https://consumer.huawei.com/cn/complaint-page/?contentTitle=/cn/phones/mate50/">内容举报</a></li>
+            </ul>
+        </div>
+    </div>
+                <!-- 创建幕布 -->
+    <div id="winmsg" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 99999;">
+        <!-- 创建主窗口 -->
+        <div style="position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        max-width: 500px;
+        background: #FFF;
+        transform: translate(-50%,-50%);
+        border-radius: 30px;
+        padding: 50px 40px;
+        ">
+            <!-- 标题 -->
+            <h3 style="font-weight: bold;text-align:center;font-size: 30px;">声明</h3>
+            <!-- 内容 -->
+            <div style="font-size: 16px;margin-top: 26px;line-height: 30px;color: #999;">本网站所有图片使用相对路径，不可随意更改文件位置和名称，否则图片显示不正常！此网站仅供学习使用！网站作者：<a href="https://whck.cc/about/">whck</a></div>
+            <!-- 按钮 -->
+            <a style="display: block;
+            background: #008f00;
+            color: #FFF;
+            text-align: center;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 60px;
+            margin: 0 auto;
+            margin-top: 45px;
+            border-radius: 32px;
+            width: 80%;
+            " onclick="
+            javascript:document.querySelector('#winmsg').remove()">我知道了</a>
+        </div>
+    </div>
+</body>
+</html>
