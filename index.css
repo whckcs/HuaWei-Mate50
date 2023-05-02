@@ -116,6 +116,7 @@
         transform: translateX(-4800px);
     }
 }
+
 .produce{
     padding-top: 50px;
     width: 1200px;
@@ -244,7 +245,35 @@
     padding-bottom: 10px;
 }
 .header .right li a:hover{
-    background-color: #000000;
+    background-color: #030303;
     color: aliceblue;
     transition: all 0.5s;
+}
+.shopping{
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    margin: auto;
+    background-color: #ffffff00;
+    backdrop-filter: blur(5px);
+    height: 50px;
+    width: 300px;
+    /* background-image: url(./media/2.jpg); */
+    border-radius: 50px;
+}
+.shopping button{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0px solid #000;
+    background-color: #030303;
+    color: aliceblue;
+    float: right;
+    cursor: pointer;
+}
+.shopping span{
+    line-height: 50px;
+    margin-left: 10px;
+    /* font-size: 0; */
 }
