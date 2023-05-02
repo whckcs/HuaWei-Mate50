@@ -294,6 +294,7 @@
     height: 320px;
     margin: 15px;
     overflow: hidden;
+    /* justify-content: space-evenly; */
 }
 /* .camera img{
     width: 300px;
@@ -353,10 +354,11 @@
     /* transition-delay: 0.5s; */
 }
 .camera .card .content h3{
-    font-size: 1.3em;
+    font-size: 24px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .camera .card .content p{
-    font-size: 1em;
-    line-height: 1.4em;
+    font-size: 18px;
+    text-align: justify;
 }
