@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/华为.svg" type="image/x-icon">
+    <title>搜索</title>
+    <style>
+      /* 样式化搜索框 */
+      .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('https://picsum.photos/1200/800') no-repeat center center fixed; /* 设置背景图片 */
+        background-size: cover; /* 背景图片尺寸自适应 */
+      }
+      .search-input {
+        padding: 16px;
+        border: 0px solid #ccc;
+        border-radius: 50px; /* 搜索框圆角 */
+        font-size: 24px;
+        width: 620px;
+        height: 33px;
+        max-width: 100%;
+        background-color: rgba(255, 255, 255, 0.5); /* 设置搜索框背景颜色和透明度 */
+        backdrop-filter: blur(10px); /* 毛玻璃效果 */
+      }
+      .search-button {
+        padding: 20px 30px; /* 搜索按钮的大小 */
+        border: none;
+        border-radius: 30px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 20px; /* 搜索按钮的字体大小 */
+        margin-left: 8px;
+        cursor: pointer;
+      }
+      .search-button:hover {
+        background-color: #0062cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="让我看看你想要什么...">
+      <button class="search-button">华为搜索</button>
+    </div>
+  </body>
+</html>
