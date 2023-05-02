@@ -1,24 +1,29 @@
+/* 全局设置 */
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
+/* 定义导航栏 */
 .header{
     display: flex;
     height: 50px;
     justify-content: space-evenly;
 }
+/* 导航栏图标 */
 .header .logo{
     width: 100px;
     padding-top: 13px;
 }
+/* }导航栏左半部分 */
 .header .left{
     width: 800px;
     display: flex;
     justify-content: space-evenly;
     line-height: 50px;
 }
+/* 导航栏左半部分鼠标悬停效果 */
 .header .left li:hover{
     border-bottom: 3px solid #000;
 }
